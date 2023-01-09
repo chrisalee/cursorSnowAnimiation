@@ -1,0 +1,41 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #000;
+    color: #fff;
+}
+
+.text {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    background: url("https://static.abeka.com/Shared/ABeka/ProductImages/ClipArt/289434/150x150y160fx160fh-w/289434-White-Snowflake-with-flower-design-color-png.png");
+    background-size: cover;
+    pointer-events: none;
+    position: absolute;
+    animation: snow 2s linear forwards;
+}
+
+@keyframes snow {
+    0% {
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translate(50%, 1000%);
+        filter: hue-rotate(360deg);
+        opacity: 0;
+    }
+}
